@@ -1,5 +1,5 @@
 //module.exports =  async function(db,{proffyValue, classValue,classScheduleValues}){
-export async function createProffy(db,{proffyValue, classValue,classScheduleValues}){
+ export async function createProffy(db,{proffyValue, classValue,classScheduleValues}){
     // inserir dados na tabela proffys
     const insertedProffy = await db.run(`
         INSERT INTO proffys(

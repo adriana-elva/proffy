@@ -1,9 +1,6 @@
 //Solicitar o require do db, o node sabe que tem que devolver o exprt
-import {conectdb} from './db.js'
-//const database = require('./db.mjs')
-import {createProffy} from './createProffy.js'
-//const createProffy = pkg
-//const createProffy = require('./createProffy')
+import {conectdb} from './db.mjs'
+import {createProffy} from './createProffy.mjs'
 
 conectdb.then(async(db)=>{
     //Inserir dados

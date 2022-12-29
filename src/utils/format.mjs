@@ -27,8 +27,15 @@ function getSubject(subjectNumber){
     return subjects[position]
 }
 
-export  {
+function convertHoursToMinutes(time){
+    const [hour, minutes]=time.split(":")
+    return Number((hour*60) + minutes)
+
+}
+
+export{
     subjects,
     weekdays,
-    getSubject
+    getSubject,
+    convertHoursToMinutes
 }
